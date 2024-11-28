@@ -1,19 +1,23 @@
 #ifndef SO_LONG_H
 # define SO_LONG_H
 
-# include <fcntl.h>
-# include "libft/libft.h"
-
-typedef struct  s_var
+typedef struct	s_map
 {
-    int door;
-    int start;
-    int wall;
-    int item;
-    int v_oid;
-    char **maps;
-    int lrg;
-    int lng;
-}               t_var;
+
+}				t_map;
+
+typedef struct	s_game
+{
+	int wall;
+	int start;
+	int item;
+	int	end;
+	int floor;
+
+	int	length;
+	int width;
+
+}				t_game;
+
 
 #endif
